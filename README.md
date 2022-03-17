@@ -1,1 +1,1 @@
-# stirling
+Stirling Python application
