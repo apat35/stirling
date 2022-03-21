@@ -1,15 +1,10 @@
 name: stirling-app-dev
-on: 
+
+on:
   push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
+    branches: [ main ]
   pull_request:
-    paths-ignore:
-      - '**.md'
-  schedule:
-    - cron: 30 3 * * *
+    branches: [ main ]
 
 jobs:
   build:
@@ -29,4 +24,6 @@ jobs:
   e1-deploy:
     name: e1-deploy
     steps: 
+    - name: deploy
+      uses: actions/checkout@v2
       run: python -c 'import math; print(math.factorial(5))'
