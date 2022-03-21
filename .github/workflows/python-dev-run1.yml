@@ -19,19 +19,19 @@ jobs:
       uses: actions/checkout@v2
   
     - name: Build
-      run: python --version run
-  test: 
-    name: test 
-    runs-on: ubuntu-latest 
+      run: python version 
+  # test: 
+  #   name: test 
+  #   runs-on: ubuntu-latest 
 
-    steps: 
-    - name: test
-      run: python -c 'import math; print(math.cos(90))'
+  #   steps: 
+  #   - name: test
+  #     run: python -c 'import math; print(math.cos(90))'
 
 
-  e1-deploy:
-    name: e1-deploy
-    runs-on: ubuntu-latest
-    steps: 
-    - name: deploy
-      run: python -c 'import math; print(math.factorial(5))'
+  # e1-deploy:
+  #   name: e1-deploy
+  #   runs-on: ubuntu-latest
+  #   steps: 
+  #   - name: deploy
+  #     run: python -c 'import math; print(math.factorial(5))'
