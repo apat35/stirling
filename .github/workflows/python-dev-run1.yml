@@ -25,5 +25,4 @@ jobs:
     name: e1-deploy
     steps: 
     - name: deploy
-      uses: actions/checkout@v2
       run: python -c 'import math; print(math.factorial(5))'
