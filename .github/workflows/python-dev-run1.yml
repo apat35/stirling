@@ -20,13 +20,14 @@ jobs:
   
     - name: Build
       run: python version 
-  # test: 
-  #   name: test 
-  #   runs-on: ubuntu-latest 
 
-  #   steps: 
-  #   - name: test
-  #     run: python -c 'import math; print(math.cos(90))'
+  test: 
+    name: test 
+    runs-on: ubuntu-latest 
+
+    steps: 
+    - name: test
+      run: python -c 'import math; print(math.cos(90))'
 
 
   e1-deploy:
